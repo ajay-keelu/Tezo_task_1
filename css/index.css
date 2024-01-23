@@ -259,7 +259,7 @@ body {
   padding: 10px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -275,6 +275,7 @@ body {
 }
 #destination .college-item-2 i{
   margin: 3px 10px;
+  margin-left: 0;
 }
 #destination .college-item-2 span {
   color: rgba(61, 64, 114, 0.847);
@@ -347,7 +348,14 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 0;
+  z-index: 1;
+}
+#tripsteps .right-item::before{
+  position: absolute;
+  content: '';
+  height: 30vh;
+  width: 30vh;
+  /* background: red; */
 }
 
 #tripsteps .right-item .float-profile{
@@ -679,5 +687,4 @@ footer .footer-main .footer-divisions .app-links div{
   border-radius: 20px;
   font-size: 10px;
   font-weight: bolder;
-  cursor: pointer;
-}
+  cursor:
