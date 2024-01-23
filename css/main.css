@@ -411,7 +411,7 @@ body {
   text-align: left;
 }
 #tripsteps .right-item .card .date-author {
-  color: rgb(162, 157, 157);
+  color: rgba(91, 35, 140, 0.756);
   width: 100%;
   text-align: left;
 }
@@ -428,14 +428,21 @@ body {
 
 }
 #tripsteps .right-item .card .card-comments span{
-  color : rgb(116, 116, 208);
+  color : rgba(91, 35, 140, 0.756);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-#tripsteps .right-item .card .card-comments span img{
+#tripsteps .right-item .card .card-comments span .building{
   height: 15px;
+  width: 20px;
+  background: url('../images/business-outline.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: hue-rotate(90deg);
 }
-#tripsteps .right-item .card .card-comments span img path{
-  fill: blue;
-}
+
 
 /* subscribe CSS */
 #subscribe {
