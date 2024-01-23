@@ -8,6 +8,7 @@
 body {
   min-height: 100vh;
   padding: 0px 120px;
+  background: rgba(250, 246, 238, 0.991);
 }
 
 /*  header CSS */
@@ -49,19 +50,22 @@ body {
 }
 #header .navitems ul li button#Signup {
   padding: 05px 10px;
-  background: #fff;
-  border: 2px solid black;
+  background: rgba(250, 246, 238, 0.991);
+  border: 1.4px solid black;
   font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
   transition: all .3s ease;
 }
 #header .navitems ul li button#Signup:hover{
-  background: rgb(237, 231, 231);
+  background: rgb(250, 232, 221);
+  box-shadow: 0px 5px 12px 0 rgb(241, 212, 195);
 }
 #header .navitems ul li select {
   border: none;
+  background: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 #header .navitems ul li select option {
   border: none;
@@ -74,18 +78,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 #banner .left-item {
-  width: 45%;
+  width: 50%;
   height: 80%;
 }
 #banner .right-item {
-  width: 45%;
+  width: 35%;
   height: 100%;
+  /* position: relative; */
 }
 
 #banner .right-item img {
   width: 100%;
+  scale: 1.4;
+  left: -100px;
+  position: relative;
+
 }
 
 #banner .left-item .title {
@@ -94,9 +104,10 @@ body {
   font-weight: 600;
 }
 #banner .left-item .subtitle {
-  font-size: 50px;
+  font-size: 60px;
   color: rgb(20, 20, 59);
   font-weight: 900;
+  line-height: 65px;
 }
 #banner .left-item .description {
   color: rgb(112, 111, 111);
@@ -135,14 +146,14 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 800;
-  color: rgba(34, 26, 53, 0.829);
+  color: rgb(75, 55, 121);
 }
 #categories .subtitle {
   text-align: center;
   font-weight: 500;
   text-transform: capitalize;
   font-size: 30px;
-  color: rgb(6, 6, 49);
+  color: rgb(21, 21, 92);
   margin: 15px;
 }
 
@@ -157,7 +168,7 @@ body {
 #categories .item {
   height: 40vh;
   width: 200px;
-  border-radius: 8px;
+  border-radius: 36px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -165,8 +176,7 @@ body {
   align-items: center;
 }
 #categories .item:hover {
-  /* border: 1px solid rgba(211, 211, 211, 0.584); */
-  box-shadow: 0 8px 14px rgba(211, 211, 211, 0.584);
+  box-shadow: 0 8px 14px rgba(245, 221, 221, 0.584);
 }
 
 #categories .item .item-img {
@@ -202,7 +212,7 @@ body {
 
 #destination .title {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 800;
@@ -229,13 +239,12 @@ body {
 #destination .dest-college {
   height: 50vh;
   width: 240px;
-  border-radius: 8px;
+  border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(211, 211, 211, 0.584);
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 5px 8px 14px 2px rgb(231, 228, 228);
+  box-shadow: 5px 8px 28px 2px rgb(255, 235, 235);
 }
 #destination .dest-college .image {
   height: 70%;
@@ -259,8 +268,8 @@ body {
 #destination .college-item-1 .name,
 #destination .college-item-1 .price {
   font-weight: 600;
-  color: rgb(147, 146, 146);
-  letter-spacing: 1px;
+  color: rgba(61, 64, 114, 0.847);
+  /* letter-spacing: 1px; */
   font-size: 13px;
 }
 #destination .college-item-2 {
@@ -270,8 +279,9 @@ body {
   margin: 3px 10px;
 }
 #destination .college-item-2 span {
-  color: rgb(113, 112, 112);
-  font-weight: 700;
+  color: rgba(61, 64, 114, 0.847);
+  /* font-weight: 700; */
+  font-size: 13px;
   text-transform: capitalize;
 }
 
@@ -282,7 +292,7 @@ body {
 }
 #tripsteps > .title {
   font-weight: 800;
-  color: rgb(154, 158, 200);
+  color: rgba(35, 39, 84, 0.947);
   font-size: 15px;
   padding: 30px 0px;
 }
@@ -299,7 +309,7 @@ body {
 }
 
 #tripsteps .container-steps .left-item .title {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -334,37 +344,42 @@ body {
 
 #tripsteps .right-item .float-profile{
   position: absolute;
-  height: 100px;
+  height: 120px;
   width: 250px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0px 6px 12px 0px rgba(253, 211, 218, 0.623);
   top:200px;
-  right: -70px;
-  background: #fff;
+  right: -70px; 
+  background: rgba(250, 246, 238, 0.991);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
+
 .float-content span{
-  color:rgb(116, 116, 208);
+  color:rgb(91, 35, 140);
+  margin: 5px 0;
 }
 .float-content h3{
+  margin: 5px 0;
   font-weight: 600;
 }
 .float-content p{
+  margin: 5px 0;
   font-weight: 600;
 }
 .float-content > div{
   height: 5px;
   width: 100%;
-  background: rgba(246, 212, 249, 0.824);
+  background: rgba(250, 219, 253, 0.824);
+  margin: 5px 0;
   border-radius: 3px;
 }
 .float-content > div div{
   height: 100%;
-  background: rgb(116, 116, 208);
+  background: rgb(91, 35, 140);
   width: 50%;
   border-radius: 3px;
 }
@@ -375,29 +390,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 15px;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
   box-shadow: 0px 6px 10px rgb(217, 215, 215), 7px 0 30px rgb(222, 244, 251);
 }
 #tripsteps .right-item .card .image {
-  width: 95%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
 }
 #tripsteps .right-item .card .image img {
   width: 100%;
 }
 #tripsteps .right-item .card .heading {
   font-size: 16px;
-  margin:10px 0;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
 }
 #tripsteps .right-item .card .date-author {
-  margin:15px 0;
   color: rgb(162, 157, 157);
+  width: 100%;
+  text-align: left;
+}
+#tripsteps .right-item .card .card-icons{
+  width: 100%;
 }
 
 #tripsteps .right-item .card .card-comments {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  text-align: left;
   /* padding: 15px 10px; */
 
 }
@@ -406,6 +432,9 @@ body {
 }
 #tripsteps .right-item .card .card-comments span img{
   height: 15px;
+}
+#tripsteps .right-item .card .card-comments span img path{
+  fill: blue;
 }
 
 /* subscribe CSS */
@@ -430,13 +459,13 @@ body {
 }
 .icon-wrap .icon {
   position: absolute;
-  right: -30px;
+  right: -10px;
   top: -20px;
   z-index: 2;
 }
 .icon-plus {
   position: absolute;
-  right: -100px;
+  right: -70px;
   top:-20px;
 }
 .icon-plus img{
@@ -485,7 +514,7 @@ body {
 }
 #subscribe .input-content button{
   padding: 10px 18px;
-  background: rgb(234, 117, 81);
+  background: rgb(250, 115, 73);
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -496,7 +525,7 @@ body {
   cursor: pointer;
 }
 #subscribe .input-content button:hover{
-  background: rgb(241, 90, 44);
+  background: rgb(250, 106, 62);
 }
 #subscribe .input-content input{
   height: 55px;
@@ -505,6 +534,7 @@ body {
   border-radius: 7px;
   border: none;
   font-size: 15px;
+  font-family: 'Poppins','FontAwesome';
   padding: 5px 10px;
 }
 /* footer css */
@@ -512,6 +542,7 @@ footer{
   margin-top: 150px;
   min-height: 34vh;
   width: 100%;
+  margin-bottom: 50px;
 }
 footer .footer-main{
   height: 30vh;
@@ -526,17 +557,17 @@ footer .footer-main .footer-divisions{
   cursor: pointer;
 }
 footer .footer-main .footer-divisions .website-heading{
-  font-size: 35px;
-  font-weight: bolder;
+  font-size: 33px;
+  font-weight: 500;
   margin-bottom: 20px;
-  color: rgb(10, 10, 66);
 }
 footer .footer-main .footer-divisions .website-heading a{
+  color: rgb(10, 10, 72);
   text-decoration: none;
 }
 footer .footer-main .footer-divisions .description{
   font-size: 12px;
-  color: rgb(10, 10, 66);
+  color: rgb(33, 33, 104);
 }
 
 footer .footer-main .footer-divisions .heading-quicklinks{
@@ -555,7 +586,6 @@ footer .footer-main .footer-divisions .quicklinks ul {
   list-style-type: none;
 }
 footer .footer-main .footer-divisions .quicklinks ul li{
-  font-weight: bold;
   color: rgb(94, 74, 121);
   padding: 5px 0;
   cursor: pointer;
@@ -569,7 +599,7 @@ footer .copyright{
 }
 footer .footer-main .footer-divisions .add-heading{
   color:rgb(94, 74, 121) ;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 18px;
   margin-bottom: 20px;
 }
