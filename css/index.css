@@ -50,7 +50,7 @@ body {
 }
 #header .navitems ul li button#Signup {
   padding: 05px 10px;
-  background: rgba(250, 246, 238, 0.991);
+  background: #fff;
   border: 1.4px solid black;
   font-weight: 500;
   border-radius: 5px;
@@ -58,7 +58,6 @@ body {
   transition: all .3s ease;
 }
 #header .navitems ul li button#Signup:hover{
-  background: rgb(250, 232, 221);
   box-shadow: 0px 5px 12px 0 rgb(241, 212, 195);
 }
 #header .navitems ul li select {
@@ -117,10 +116,10 @@ body {
 #banner .left-item .find-more {
   background: rgb(245, 171, 33);
   color: #fff;
-  border: 1px solid rgb(211, 140, 8);
+  border: none;
   padding: 10px 15px;
   margin: 15px 0;
-  box-shadow: 5px 8px 12px 0px rgba(252, 212, 137, 0.705);
+  /* box-shadow: 5px 8px 12px 0px rgba(252, 212, 137, 0.705); */
   border-radius: 5px;
   transition: all .5s ease-in-out;
   font-weight: bold;
@@ -128,9 +127,9 @@ body {
 }
 
 #banner .left-item .find-more:hover{
-  background: rgb(253, 168, 10);
+  background: rgb(255, 208, 0);
   color: #fff;
-  box-shadow: -5px -8px 12px 0px rgba(248, 198, 105, 0.705);
+  box-shadow: 5px 8px 12px 1px rgba(248, 198, 105, 0.705);
 
 }
 
@@ -213,9 +212,8 @@ body {
 #destination .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 600;
   color: rgba(62, 42, 81, 0.877);
 }
 
@@ -294,7 +292,8 @@ body {
   font-weight: 800;
   color: rgba(35, 39, 84, 0.947);
   font-size: 15px;
-  padding: 30px 0px;
+  padding: 10px 0px;
+  margin-top: 80px;
 }
 #tripsteps .container-steps {
   min-height: 60vh;
@@ -305,14 +304,13 @@ body {
 }
 #tripsteps .container-steps .left-item {
   min-height: 100%;
-  width: 45%;
+  width: 50%;
 }
 
 #tripsteps .container-steps .left-item .title {
   font-size: 45px;
   font-weight: 600;
   text-transform: capitalize;
-  letter-spacing: 1px;
   color: rgb(20, 20, 56);
 }
 #tripsteps .container-steps .left-item .item-container {
@@ -328,6 +326,15 @@ body {
   color: rgba(43, 40, 87, 0.68);
   font-size: 17px;
 }
+#tripsteps .item-container .icon{
+  height: 48px;
+  width: 47px;
+}
+#tripsteps .item-container .icon img{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
 #tripsteps .item-container .description .head-description {
   color: rgba(43, 40, 87, 0.68);
   font-size: 14px;
@@ -340,6 +347,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 0;
 }
 
 #tripsteps .right-item .float-profile{
@@ -349,10 +357,10 @@ body {
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0px 6px 12px 0px rgba(253, 211, 218, 0.623);
-  top:200px;
-  right: -70px; 
+  top:180px;
+  right: -50px; 
+  z-index: 2;
   background: #fff;
-  /* background: rgba(250, 246, 238, 0.991); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,12 +399,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   align-items: center;
+  z-index: 1;
   gap: 15px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0px 6px 10px rgb(217, 215, 215), 7px 0 30px rgb(222, 244, 251);
+  box-shadow: 6px 6px 20px 0px rgba(254, 188, 188, 0.507);
 }
+
 #tripsteps .right-item .card .image {
   width: 100%;
   overflow: hidden;
@@ -415,6 +426,7 @@ body {
   color: rgba(91, 35, 140, 0.756);
   width: 100%;
   text-align: left;
+  font-size: 12px;
 }
 #tripsteps .right-item .card .card-icons{
   width: 100%;
@@ -433,6 +445,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
   gap: 5px;
 }
 #tripsteps .right-item .card .card-comments span .building{
@@ -447,7 +460,6 @@ body {
 
 /* subscribe CSS */
 #subscribe {
-  background: rgba(240, 233, 252, 0.648);
   min-height: 50vh;
   width: 100%;
   margin: 20px 0;
@@ -457,6 +469,7 @@ body {
   overflow: hidden;
   z-index: 1;
   display: flex;
+  margin-top: 80px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -468,16 +481,16 @@ body {
 .icon-wrap .icon {
   position: absolute;
   right: -10px;
-  top: -20px;
+  top: 40px;
   z-index: 2;
 }
 .icon-plus {
   position: absolute;
-  right: -70px;
+  right: -140px;
   top:-20px;
 }
 .icon-plus img{
-  height: 100px;
+  height: 150px;
 }
 #subscribe .left-desigh {
   position: absolute;
@@ -500,10 +513,10 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  background: #ffd2fecf;
+  background: rgba(255, 240, 240, 0.916);
 }
 #subscribe .content {
-  color: rgb(91, 80, 107);
+  color: rgb(109, 92, 135);
   font-size: 25px;
   font-weight: bolder;
   letter-spacing: 1px;
@@ -533,7 +546,7 @@ body {
   cursor: pointer;
 }
 #subscribe .input-content button:hover{
-  background: rgb(250, 106, 62);
+  background: rgb(245, 169, 5);
 }
 #subscribe .input-content input{
   height: 55px;
@@ -618,6 +631,7 @@ footer .footer-main .footer-divisions .icons{
   align-items: center;
   justify-content: space-evenly;
   height: 50px;
+  margin-bottom: 15px;
 }
 footer .footer-main .footer-divisions .icons i{
   height: 35px;
@@ -628,22 +642,22 @@ footer .footer-main .footer-divisions .icons i{
   border-radius: 20px;
   font-size: 12px;
   transition: all .3s ease;
-  box-shadow: 0 5px 8px rgba(195, 192, 192, 0.651);
+  box-shadow: 0 5px 8px rgba(249, 204, 204, 0.651);
 }
 footer .footer-main .footer-divisions .icons i.face:hover{
   color:rgb(42, 89, 190);
   transform: translateY(-6px);
-  box-shadow: 0 5px 8px rgba(145, 143, 143, 0.651);
+  box-shadow: 0 5px 8px rgba(216, 229, 252, 0.651);
 }
 footer .footer-main .footer-divisions .icons i.inst:hover{
   color:rgb(237, 16, 156);
   transform: translateY(-6px);
-  box-shadow: 0 5px 8px rgba(145, 143, 143, 0.651);
+  box-shadow: 0 5px 8px rgba(249, 170, 170, 0.651);
 }
 footer .footer-main .footer-divisions .icons i.twit:hover{
   color:rgb(61, 120, 248);
   transform: translateY(-6px);
-  box-shadow: 0 5px 8px rgba(145, 143, 143, 0.651);
+  box-shadow: 0 5px 8px rgba(77, 125, 236, 0.651);
 }
 footer .footer-main .footer-divisions .app-links{
   display: flex;
