@@ -706,6 +706,10 @@ footer .footer-main .footer-divisions .app-links span{
   border-radius: 20px;
   width: 45%;
 }
+.footer-space{
+  width: 210px;
+  margin-right: 40px;
+}
 footer .footer-main .footer-divisions .app-links div{
   border: 1px solid black;
   padding: 10px 10px;
