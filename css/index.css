@@ -687,4 +687,5 @@ footer .footer-main .footer-divisions .app-links div{
   border-radius: 20px;
   font-size: 10px;
   font-weight: bolder;
-  cursor:
+  cursor:pointer;
+}
