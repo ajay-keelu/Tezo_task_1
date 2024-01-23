@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body {
   min-height: 100vh;
+  width: 100%;
   padding: 0px 150px;
-  /* background: rgba(250, 246, 238, 0.991); */
 }
 
 /*  header CSS */
@@ -37,15 +37,15 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   font-weight: 500;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
 }
-#header .navitems ul li:hover{
+#header .navitems ul li:hover {
   box-shadow: 2px 5px 10px lightgrey;
   border-radius: 5px;
 }
 
-#header .navitems ul li:has(button#Signup){
+#header .navitems ul li:has(button#Signup) {
   box-shadow: none;
 }
 #header .navitems ul li button#Signup {
@@ -55,9 +55,9 @@ body {
   font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-#header .navitems ul li button#Signup:hover{
+#header .navitems ul li button#Signup:hover {
   box-shadow: 0px 5px 12px 0 rgb(241, 212, 195);
 }
 #header .navitems ul li select {
@@ -94,7 +94,6 @@ body {
   scale: 1.4;
   left: -100px;
   position: relative;
-
 }
 
 #banner .left-item .title {
@@ -104,7 +103,7 @@ body {
   margin: 15px 0;
 }
 #banner .left-item .subtitle {
-  font-size: 60px;
+  font-size: 58px;
   color: rgb(20, 20, 59);
   font-weight: 900;
   line-height: 65px;
@@ -122,18 +121,15 @@ body {
   border: none;
   padding: 10px 15px;
   margin: 15px 0;
-  /* box-shadow: 5px 8px 12px 0px rgba(252, 212, 137, 0.705); */
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-weight: bold;
   cursor: pointer;
 }
 
-#banner .left-item .find-more:hover{
+#banner .left-item .find-more:hover {
   background: rgb(255, 208, 0);
   color: #fff;
-  box-shadow: 5px 8px 12px 1px rgba(248, 198, 105, 0.705);
-
 }
 
 /* category CSS */
@@ -178,7 +174,7 @@ body {
   align-items: center;
 }
 #categories .item:hover {
-  box-shadow: 0 30px 45px 0px rgba(255, 235, 235, 0.906);
+  box-shadow: 0 30px 45px 0px rgba(250, 221, 221, 0.95);
 }
 
 #categories .item .item-img {
@@ -201,7 +197,7 @@ body {
   text-align: center;
   color: rgb(123, 114, 137);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* destination CSS*/
@@ -278,7 +274,7 @@ body {
 #destination .college-item-2 {
   justify-content: flex-start;
 }
-#destination .college-item-2 i{
+#destination .college-item-2 i {
   margin: 3px 10px;
   margin-left: 0;
 }
@@ -316,11 +312,12 @@ body {
 #tripsteps .container-steps .left-item .title {
   font-size: 45px;
   font-weight: 500;
+  line-height: 60px;
   text-transform: capitalize;
   color: rgb(26, 13, 57);
 }
 #tripsteps .container-steps .left-item .item-container {
-  margin: 40px 5px;
+  margin: 20px 5px;
   min-height: 60px;
   display: flex;
   width: 100%;
@@ -332,11 +329,11 @@ body {
   color: rgb(86, 78, 110);
   font-size: 17px;
 }
-#tripsteps .item-container .icon{
+#tripsteps .item-container .icon {
   height: 48px;
   width: 47px;
 }
-#tripsteps .item-container .icon img{
+#tripsteps .item-container .icon img {
   height: 100%;
   width: 100%;
   border-radius: 8px;
@@ -356,15 +353,15 @@ body {
   z-index: -1;
 }
 
-#tripsteps .right-item .float-profile{
+#tripsteps .right-item .float-profile {
   position: absolute;
   height: 120px;
   width: 250px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 6px 16px 18px 0px rgba(253, 211, 218, 0.623);
-  top:180px;
-  right: -50px; 
+  top: 180px;
+  right: -65px;
   z-index: 2;
   background: #fff;
   display: flex;
@@ -373,26 +370,26 @@ body {
   gap: 10px;
 }
 
-.float-content span{
-  color:rgb(91, 35, 140);
+.float-content span {
+  color: rgb(91, 35, 140);
   margin: 5px 0;
 }
-.float-content h3{
-  margin: 5px 0;
-  font-weight: 600;
-}
-.float-content p{
+.float-content h3 {
   margin: 5px 0;
   font-weight: 600;
 }
-.float-content > div{
+.float-content p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+.float-content > div {
   height: 5px;
   width: 100%;
   background: rgba(250, 219, 253, 0.824);
   margin: 5px 0;
   border-radius: 3px;
 }
-.float-content > div div{
+.float-content > div div {
   height: 100%;
   background: rgb(91, 35, 140);
   width: 50%;
@@ -433,7 +430,7 @@ body {
   text-align: left;
   font-size: 12px;
 }
-#tripsteps .right-item .card .card-icons{
+#tripsteps .right-item .card .card-icons {
   width: 100%;
 }
 
@@ -443,25 +440,23 @@ body {
   width: 100%;
   text-align: left;
   /* padding: 15px 10px; */
-
 }
-#tripsteps .right-item .card .card-comments span{
-  color : rgba(91, 35, 140, 0.756);
+#tripsteps .right-item .card .card-comments span {
+  color: rgba(91, 35, 140, 0.756);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   gap: 5px;
 }
-#tripsteps .right-item .card .card-comments span .building{
+#tripsteps .right-item .card .card-comments span .building {
   height: 15px;
   width: 20px;
-  background: url('../images/business-outline.svg');
+  background: url("../images/business-outline.svg");
   background-repeat: no-repeat;
   background-position: center;
-  filter:opacity(.5);
+  filter: opacity(0.5);
 }
-
 
 /* subscribe CSS */
 #subscribe {
@@ -474,7 +469,7 @@ body {
   overflow: hidden;
   z-index: 1;
   display: flex;
-  margin-top: 80px;
+  margin-top: 120px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -485,21 +480,25 @@ body {
 }
 .icon-wrap .icon {
   position: absolute;
-  right: -10px;
-  top: 40px;
+  right: -25px;
+  top: 75px;
   z-index: 2;
 }
 .icon-plus {
   position: absolute;
-  right: -140px;
-  top:-20px;
+  right: -130px;
+  top: -20px;
 }
-.rotate-icon{
-  top: -50px;
+.rotate-icon {
+  top: -108px !important;
   transform: rotate(90deg);
 }
-.icon-plus img{
-  height: 150px;
+
+.rotate-icon img {
+  height: 180px !important;
+}
+.icon-plus img {
+  height: 130px;
 }
 #subscribe .left-desigh {
   position: absolute;
@@ -514,7 +513,7 @@ body {
   z-index: -1;
   transform: rotate(-100deg);
 }
-#subscribe div.main{
+#subscribe div.main {
   height: 50vh;
   width: 100%;
   display: flex;
@@ -529,7 +528,7 @@ body {
   font-size: 25px;
   font-weight: bolder;
   letter-spacing: 1px;
-  text-align: center; 
+  text-align: center;
   z-index: 20;
 }
 
@@ -542,7 +541,7 @@ body {
   gap: 10px;
   margin: 30px 0;
 }
-#subscribe .input-content button{
+#subscribe .input-content button {
   padding: 10px 18px;
   background: rgb(250, 115, 73);
   color: #fff;
@@ -550,23 +549,23 @@ body {
   border-radius: 7px;
   height: 55px;
   font-size: 12px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 200px;
   cursor: pointer;
 }
-#subscribe .input-content button:hover{
+#subscribe .input-content button:hover {
   background: rgb(245, 169, 5);
 }
-#subscribe .input-content input{
+#subscribe .input-content input {
   height: 55px;
-  width:100%;
+  width: 100%;
   outline: none;
   border: none;
   font-size: 15px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding: 5px 10px;
 }
-#subscribe .input-wrapper{
+#subscribe .input-wrapper {
   height: 55px;
   width: 100%;
   outline: none;
@@ -575,9 +574,9 @@ body {
   font-size: 15px;
   display: flex;
   overflow: hidden;
-  font-family: 'Poppins','FontAwesome';
+  font-family: "Poppins", "FontAwesome";
 }
-#subscribe .input-wrapper div{
+#subscribe .input-wrapper div {
   background: #fff;
   height: 100%;
   padding: 10px 0;
@@ -587,134 +586,146 @@ body {
   align-items: center;
   justify-content: center;
 }
-#subscribe .input-wrapper div i{
+#subscribe .input-wrapper div i {
   color: rgb(83, 81, 101);
 }
 /* footer css */
-footer{
+footer {
   margin-top: 150px;
-  min-height: 34vh;
+  min-height: 30vh;
   width: 100%;
   margin-bottom: 50px;
 }
-footer .footer-main{
+footer .footer-main {
   height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-footer .footer-main .footer-divisions{
-  width: 180px;
+footer .footer-main .footer-divisions {
+  min-width: 130px;
+  max-width: 160px;
   height: 100%;
   cursor: pointer;
 }
-footer .footer-main .footer-divisions .website-heading{
-  font-size: 33px;
+footer .footer-main .footer-divisions .website-heading {
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-footer .footer-main .footer-divisions .website-heading a{
+.footer-divisions.footer-space {
+  padding: 0 !important;
+  margin-right: 70px;
+}
+.footer-divisions {
+  padding-top: 25px;
+}
+footer .footer-main .footer-divisions .website-heading a {
   color: rgb(31, 17, 69);
   text-decoration: none;
 }
-footer .footer-main .footer-divisions .description{
-  font-size: 12px;
+footer .footer-main .footer-divisions .description {
+  font-size: 10px;
+  width: 100%;
   color: rgb(33, 33, 104);
 }
 
-footer .footer-main .footer-divisions .heading-quicklinks{
+footer .footer-main .footer-divisions .heading-quicklinks {
   font-size: 17px;
   font-weight: bolder;
   text-align: left;
 }
-footer .footer-main .footer-divisions .quicklinks{
+footer .footer-main .footer-divisions .quicklinks {
   width: 100%;
   min-height: 20vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
 }
 footer .footer-main .footer-divisions .quicklinks ul {
   list-style-type: none;
 }
-footer .footer-main .footer-divisions .quicklinks ul li{
+footer .footer-main .footer-divisions .quicklinks ul li {
   color: rgb(108, 100, 125);
   padding: 5px 0;
   cursor: pointer;
   font-size: 13px;
   font-weight: 500;
 }
-footer .copyright{
+footer .copyright {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  color:rgb(108, 100, 125) ;
+  color: rgb(108, 100, 125);
   margin: 30px 0;
 }
-footer .footer-main .footer-divisions .add-heading{
-  color:rgb(94, 74, 121) ;
+footer .footer-main .footer-divisions .add-heading {
+  color: rgb(94, 74, 121);
   /* font-weight: bold; */
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
 }
-footer .footer-main .footer-divisions .icons{
+footer .footer-main .footer-divisions .icons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 50px;
   margin-bottom: 15px;
 }
-footer .footer-main .footer-divisions .icons i{
-  height: 40px;
-  width: 40px;
+footer .footer-main .footer-divisions .icons i {
+  height: 35px;
+  width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   font-size: 14px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 5px 8px rgba(249, 204, 204, 0.651);
 }
-footer .footer-main .footer-divisions .icons i.face:hover{
-  color:rgb(42, 89, 190);
+footer .footer-main .footer-divisions .icons i.face:hover {
+  color: rgb(42, 89, 190);
   transform: translateY(-6px);
   box-shadow: 0 5px 8px rgba(216, 229, 252, 0.651);
 }
-footer .footer-main .footer-divisions .icons i.inst:hover{
-  color:rgb(237, 16, 156);
+footer .footer-main .footer-divisions .icons i.inst:hover {
+  color: rgb(237, 16, 156);
   transform: translateY(-6px);
   box-shadow: 0 5px 8px rgba(249, 170, 170, 0.651);
 }
-footer .footer-main .footer-divisions .icons i.twit:hover{
-  color:rgb(61, 120, 248);
+footer .footer-main .footer-divisions .icons i.twit:hover {
+  color: rgb(61, 120, 248);
   transform: translateY(-6px);
   box-shadow: 0 5px 8px rgba(77, 125, 236, 0.651);
 }
-footer .footer-main .footer-divisions .app-links{
+footer .footer-main .footer-divisions .app-links {
   display: flex;
   gap: 5px;
 }
-footer .footer-main .footer-divisions .app-links span{
+footer .footer-main .footer-divisions .app-links span {
   height: 30px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   background: black;
   border-radius: 20px;
   width: 45%;
 }
-.footer-space{
-  width: 210px;
+.footer-space {
+  width: 250px;
   margin-right: 40px;
 }
-footer .footer-main .footer-divisions .app-links div{
+footer .footer-main .footer-divisions .app-links div {
   border: 1px solid black;
   padding: 10px 10px;
   border-radius: 20px;
   font-size: 10px;
   font-weight: bolder;
-  cursor:pointer
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
 }
