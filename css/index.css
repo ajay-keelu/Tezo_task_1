@@ -251,7 +251,8 @@ body {
 }
 #destination .dest-college .image img {
   height: 100%;
-  width: 108%;
+  width: 100%;
+  object-fit: fill;
 }
 
 #destination .college-item-1,
@@ -350,7 +351,24 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  background: #fff;
+  z-index: 0;
+}
+#tripsteps .right-item::before {
+  content: "";
+  position: absolute;
   z-index: -1;
+  height: 50vh;
+  width: 40vh;
+  background: radial-gradient(
+    white 20%,
+    rgb(225, 225, 254) 60%,
+    rgb(248, 233, 236) 10%
+  );
+  filter: blur(25px);
+  right: 90px;
+  border-radius: 50%;
+  top: -30px;
 }
 
 #tripsteps .right-item .float-profile {
@@ -395,6 +413,7 @@ body {
   width: 50%;
   border-radius: 3px;
 }
+
 #tripsteps .right-item .card {
   min-height: 60vh;
   width: 70%;
@@ -403,12 +422,12 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  background: #fff;
   align-items: center;
   gap: 15px;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0 35px 55px 0px rgba(255, 235, 235, 0.906);
-  /* box-shadow: 6px 6px 20px 0px rgba(254, 188, 188, 0.507); */
 }
 #tripsteps .right-item .card .image {
   width: 100%;
@@ -566,6 +585,10 @@ body {
   font-family: "Poppins";
   padding: 5px 10px;
 }
+#subscribe .input-content input::-webkit-search-cancel-button {
+  cursor: pointer;
+  scale: 1.3 !important;
+}
 #subscribe .input-wrapper {
   height: 55px;
   width: 100%;
@@ -656,6 +679,10 @@ footer .footer-main .footer-divisions .quicklinks ul li {
 }
 footer .footer-main .footer-divisions .quicklinks ul li a {
   color: rgb(87, 79, 111);
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-main .footer-divisions .quicklinks ul li a:hover {
+  color: rgb(105, 122, 245);
 }
 footer .copyright {
   text-align: center;
