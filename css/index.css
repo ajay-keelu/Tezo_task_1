@@ -348,7 +348,7 @@ body {
   min-height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   z-index: -1;
 }
@@ -361,7 +361,7 @@ body {
   border-radius: 10px;
   box-shadow: 6px 16px 18px 0px rgba(253, 211, 218, 0.623);
   top: 180px;
-  right: -65px;
+  right: 0;
   z-index: 2;
   background: #fff;
   display: flex;
