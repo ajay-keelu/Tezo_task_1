@@ -75,7 +75,7 @@ body {
 }
 /* Banner CSS */
 #banner {
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -85,6 +85,7 @@ body {
 #banner .left-item {
   width: 50%;
   height: 80%;
+  margin-bottom: 40px;
 }
 #banner .right-item {
   width: 35%;
@@ -93,7 +94,7 @@ body {
 
 #banner .right-item img {
   width: 100%;
-  scale: 1.6;
+  scale: 2;
   left: -100px;
   position: relative;
 }
@@ -105,7 +106,7 @@ body {
   margin: 15px 0;
 }
 #banner .left-item .subtitle {
-  font-size: 58px;
+  font-size: 60px;
   color: rgb(20, 20, 59);
   font-weight: 900;
   line-height: 65px;
