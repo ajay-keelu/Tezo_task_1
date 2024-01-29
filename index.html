@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel site</title>
-    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,21 +11,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <!-- header with nav links -->
     <header id="header">
       <div class="logo">
-        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        <a title="logo" href="#"><img src="/images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="toggle">
+        <i class="fa fa-bars"></i>
       </div>
       <div class="navitems">
         <ul>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Hotels</a></li>
-          <li><a href="#">Flights</a></li>
-          <li><a href="#">Bookings</a></li>
-          <li><a href="#">Login</a></li>
-          <li><button id="Signup">Sign up</button></li>
+          <li><a title="Destinations" href="#">Destinations</a></li>
+          <li><a title="Hotels" href="#">Hotels</a></li>
+          <li><a title="Flights" href="#">Flights</a></li>
+          <li><a title="Bookings" href="#">Bookings</a></li>
+          <li><a title="Login" href="#">Login</a></li>
+          <li><button id="Signup">Sign&nbsp;up</button></li>
           <li>
             <select>
               <option>en</option>
@@ -36,7 +39,6 @@
         </ul>
       </div>
     </header>
-
     <!-- banner -->
     <section id="banner">
       <div class="left-item">
@@ -44,78 +46,80 @@
         <div class="subtitle">Travel, enjoy and live a new and full life</div>
         <div class="description">
           Built Wicket longer admire do barton vanity itself do in it. Preferred
-          to sportsmen it engrossed listening. Park gate <br />
-          sell they west hard for the.
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
         </div>
         <button class="find-more">Find out more</button>
       </div>
       <div class="right-item">
-        <img src="./images/traveller.png" alt="traveller" />
+        <img src="/images/traveller.png" alt="traveller" />
       </div>
     </section>
     <div class="icon-wrap">
       <div class="icon-plus">
-        <img src="./images/plus.png" alt="send" />
+        <img src="/images/plus.png" alt="send" />
       </div>
     </div>
+
     <!-- Categories -->
+
     <section id="categories">
       <div class="title">category</div>
       <div class="subtitle">we offer best services</div>
       <div class="category-container">
-        <div class="item">
-          <div class="item-img">
-            <img src="./images/weather.png" alt="Weather" />
+        <div class="category-wrapper">
+          <div class="item">
+            <div class="item-img">
+              <img src="/images/weather.png" alt="Weather" />
+            </div>
+            <div class="item-heading">Calculated Weather</div>
+            <div class="item-description">
+              Built Wicket longer admire do barton vanity itself do in it.
+            </div>
           </div>
-          <div class="item-heading">Calculated Weather</div>
-          <div class="item-description">
-            Built Wicket longer <br />
-            admire do barton <br />
-            vanity itself do in it.
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-img">
-            <img src="./images/flight.png" alt="Flights" />
-          </div>
-          <div class="item-heading">Best Flights</div>
-          <div class="item-description">
-            Engrossed listening. <br />
-            Park gate sell they <br />
-            west hard for the.
+          <div class="item">
+            <div class="item-img">
+              <img src="/images/flight.png" alt="Flights" />
+            </div>
+            <div class="item-heading">Best Flights</div>
+            <div class="item-description">
+              Engrossed listening. Park gate sell they west hard for the.
+            </div>
           </div>
         </div>
-        <div class="item">
-          <div class="item-img">
-            <img src="./images/event.png" alt="Events" />
+        <div class="category-wrapper">
+          <div class="item">
+            <div class="item-img">
+              <img src="/images/event.png" alt="Events" />
+            </div>
+            <div class="item-heading">Local Events</div>
+            <div class="item-description">
+              Barton vanity itself do in it. Prefered to men it engrossed
+              listening.
+            </div>
           </div>
-          <div class="item-heading">Local Events</div>
-          <div class="item-description">
-            Barton vanity itself do <br />
-            in it. Prefered to men it <br />engrossed listening.
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-img">
-            <img src="./images/customization.png" alt="Customization" />
-          </div>
-          <div class="item-heading">Customization</div>
-          <div class="item-description">
-            We deliver outsourced <br />
-            aviation services for <br />
-            military customers
+          <div class="item">
+            <div class="item-img">
+              <img src="/images/customization.png" alt="Customization" />
+            </div>
+            <div class="item-heading">Customization</div>
+            <div class="item-description">
+              We deliver outsourced aviation services for military customers
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Destinations -->
+
     <section id="destination">
       <div class="title">Top Selling</div>
       <div class="subtitle">Top Destinations</div>
       <div class="college-container">
         <div class="dest-college">
           <div class="image">
-            <img src="./images/rome.png" alt="Rome" />
+            <img src="/images/rome.png" alt="Rome" />
           </div>
           <div class="college-item-1">
             <div class="name">Rome, Italy</div>
@@ -128,7 +132,7 @@
         </div>
         <div class="dest-college">
           <div class="image">
-            <img src="./images/london.jpg" alt="london" />
+            <img src="/images/london.jpg" alt="london" />
           </div>
           <div class="college-item-1">
             <div class="name">London,UK</div>
@@ -141,7 +145,7 @@
         </div>
         <div class="dest-college">
           <div class="image">
-            <img src="./images/europe.png" alt="europe" />
+            <img src="/images/europe.png" alt="europe" />
           </div>
           <div class="college-item-1">
             <div class="name">Full Europe</div>
@@ -154,48 +158,46 @@
         </div>
       </div>
     </section>
+
     <!-- book trip -->
     <section id="tripsteps">
       <div class="title">Easy and Fast</div>
       <div class="container-steps">
         <div class="left-item">
-          <div class="title">
-            Book your next trip <br />
-            in 3 Easy Steps
-          </div>
+          <div class="title">Book your next trip in 3 Easy Steps</div>
           <div class="item-container">
             <div class="icon">
-              <img src="./images/destination.png" alt="destination" />
+              <img src="/images/destination.png" alt="destination" />
             </div>
             <div class="description">
               <div class="heading">Choose Destination</div>
               <div class="head-description">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipisicing elit. Atque, magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                magnam!
               </div>
             </div>
           </div>
           <div class="item-container">
             <div class="icon">
-              <img src="./images/payment.png" alt="payment" />
+              <img src="/images/payment.png" alt="payment" />
             </div>
             <div class="description">
               <div class="heading">Make Payment</div>
               <div class="head-description">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipisicing elit. Atque, magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                magnam!
               </div>
             </div>
           </div>
           <div class="item-container">
             <div class="icon">
-              <img src="./images/car.png" alt="car" />
+              <img src="/images/car.png" alt="car" />
             </div>
             <div class="description">
               <div class="heading">Reach Ariport on Selected Date</div>
               <div class="head-description">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipisicing elit. Atque, magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                magnam!
               </div>
             </div>
           </div>
@@ -203,7 +205,7 @@
         <div class="right-item">
           <div class="float-profile">
             <div class="image">
-              <img class="float-image" src="./images/europe.png" alt="europe" />
+              <img class="float-image" src="/images/europe.png" alt="europe" />
             </div>
             <div class="float-content">
               <span>Ongoing</span>
@@ -216,41 +218,41 @@
           </div>
           <div class="card">
             <div class="image">
-              <img src="./images/girl.jpg" alt="profile girl" />
+              <img src="/images/girl.jpg" alt="profile girl" />
             </div>
             <div class="heading">Trip to Greece</div>
             <div class="date-author">14 - 29 June | by Robbin Uttappa</div>
             <div class="card-icons">
-              <img src="./images/LEAF.png" alt="LEAF" />
-              <img src="./images/send.png" alt="send" />
-              <img src="./images/LEAF.png" alt="map" />
+              <img src="/images/LEAF.png" alt="LEAF" />
+              <img src="/images/send.png" alt="send" />
+              <img src="/images/LEAF.png" alt="map" />
             </div>
             <div class="card-comments">
               <span> <span class="building"></span>24 people going </span>
-              <img src="./images/heart.png" alt="like" />
+              <img src="/images/heart.png" alt="like" />
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- subscribe division -->
     <div class="icon-wrap">
       <div class="icon">
-        <img src="./images/telegram.png" alt="icon" />
+        <img src="/images/telegram.png" alt="icon" />
       </div>
     </div>
     <section id="subscribe">
       <div class="left-desigh">
-        <img src="./images/spirals.png" alt="spirals" />
+        <img src="/images/spirals.png" alt="spirals" />
       </div>
       <div class="right-desigh">
-        <img src="./images/spirals.png" alt="spirals" />
+        <img src="/images/spirals.png" alt="spirals" />
       </div>
       <div class="main">
         <div class="content">
-          Subscribe to get Information, latest news and other
-          <br />
-          interesting offers about Cobham
+          Subscribe to get Information, latest news and other interesting offers
+          about Cobham
         </div>
         <div class="input-content">
           <div class="input-wrapper">
@@ -265,9 +267,10 @@
     </section>
     <div class="icon-wrap">
       <div class="icon-plus rotate-icon">
-        <img src="./images/plus.png" alt="send" />
+        <img src="/images/plus.png" alt="send" />
       </div>
     </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer-main">
@@ -283,9 +286,9 @@
           <div class="heading-quicklinks">Company</div>
           <div class="quicklinks">
             <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Mobile</a></li>
+              <li><a title="About" href="">About</a></li>
+              <li><a title="Careers" href="">Careers</a></li>
+              <li><a title="Mobile" href="">Mobile</a></li>
             </ul>
           </div>
         </div>
@@ -293,9 +296,9 @@
           <div class="heading-quicklinks">Contact</div>
           <div class="quicklinks">
             <ul>
-              <li><a href="">Help/FAQ</a></li>
-              <li><a href="">Press</a></li>
-              <li><a href="">Affilates</a></li>
+              <li><a title="Help/FAQ" href="">Help/FAQ</a></li>
+              <li><a title="Press" href="">Press</a></li>
+              <li><a title="Affilates" href="">Affilates</a></li>
             </ul>
           </div>
         </div>
@@ -303,9 +306,9 @@
           <div class="heading-quicklinks">More</div>
           <div class="quicklinks">
             <ul>
-              <li><a href="">Airlinefees</a></li>
-              <li><a href="">Airline</a></li>
-              <li><a href="">Low fare tips</a></li>
+              <li><a title="Airlinefees" href="">Airlinefees</a></li>
+              <li><a title="Airline" href="">Airline</a></li>
+              <li><a title="Low fare tips" href="">Low fare tips</a></li>
             </ul>
           </div>
         </div>
@@ -319,14 +322,14 @@
           <div class="app-links">
             <span class="googleplay">
               <img
-                src="./images/google play.png"
+                src="/images/google play.png"
                 alt="googleplay"
                 height="15px"
               />
             </span>
             <span class="apple-store">
               <img
-                src="./images/apple store.png"
+                src="/images/apple store.png"
                 alt="apple-store"
                 height="15px"
               />
@@ -336,5 +339,6 @@
       </div>
       <div class="copyright">All rights reserved @travelpro.com</div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
